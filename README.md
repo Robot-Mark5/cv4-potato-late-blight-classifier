@@ -26,6 +26,26 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 | [Uduak Uduakabasi Johnson] | [23/EG/CV/021] | [Yhudee10] |
 | [Emeh Godspower Okon] | [23/EG/CV/071] | [Godspower-6]
 
+## Group Members (CV4)
+| Name | Registration Number | GitHub Username |
+|------|---------------------|------------------|
+| [Member 1] | [Reg Number] | [GitHub username] |
+| [Member 2] | [Reg Number] | [GitHub username] |
+| [Member 3] | [Reg Number] | [GitHub username] |
+| [Member 4] | [Reg Number] | [GitHub username] |
+| [Member 5] | [Reg Number] | [GitHub username] |
+| [Member 6] | [Reg Number] | [GitHub username] |
+| [Member 7] | [Reg Number] | [GitHub username] |
+
+## Contributors' Notes
+- **[Imetom Emmanuel Iniobong]:** Model training, deployment, and Streamlit troubleshooting
+- **[Member 2]:** 
+- **[Member 3]:** 
+- **[Member 4]:** 
+- **[Member 5]:** 
+- **[Member 6]:** 
+- **[Member 7]:**
+- 
 ## Tech Stack
 - TensorFlow / Keras (MobileNetV3Small transfer learning)
 - Streamlit (web interface)
