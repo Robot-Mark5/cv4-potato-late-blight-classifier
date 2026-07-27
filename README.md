@@ -20,7 +20,7 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 | [Imetom Emmanuel Iniobong] | [23/EG/CV/061] | [Robot-Mark5] |
 | [Johnson Success Innocent] | [23/EG/CV/001] | [Success-1404] |
 | [Nnitor Emmanuel Emmanuel] | [23/EG/CV/011] | [Nnitor001] |
-| [Adah Convenant Victor] | [23/EG/CV/081] | [convenantpaul] |
+| [Adah Covenant Victor] | [23/EG/CV/081] | [covenantpaul] |
 | [Udoise Miracle Stephen] | [23/EG/CV/031] | [Miraboy7] |
 | [Uduak Uduakabasi Johnson] | [23/EG/CV/021] | [Yhudee10] |
 | [Emeh Godspower Okon] | [23/EG/CV/071] | [Godspower-6]
