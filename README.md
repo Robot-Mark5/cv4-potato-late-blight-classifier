@@ -17,10 +17,13 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 ## Group Members (CV4)
 | Name | Registration Number | GitHub Username |
 |------|---------------------|------------------|
-| [Your Name] | [Reg Number] | [GitHub username] |
-| [Member 2] | [Reg Number] | [GitHub username] |
-| [Member 3] | [Reg Number] | [GitHub username] |
-| [Member 4] | [Reg Number] | [GitHub username] |
+| [Imetom Emmanuel Iniobong] | [23/EG/CV/061] | [Robot-Mark5] |
+| [Johnson Success Innocent] | [23/EG/CV/001] | [Success-1404] |
+| [Nnitor Emmanuel Emmanuel] | [23/EG/CV/011] | [Nnitor001] |
+| [Adah Convenant Victor] | [23/EG/CV/081] | [convenantpaul] |
+| [Udoise Miracle Stephen] | [23/EG/CV/031] | [Miraboy7] |
+| [Uduak Uduakabasi Johnson] | [23/EG/CV/021] | [Yhudee10] |
+| [Emeh Godspower Okon] | [23/EG/CV/071] | [Godspower-6]
 
 ## Tech Stack
 - TensorFlow / Keras (MobileNetV3Small transfer learning)
