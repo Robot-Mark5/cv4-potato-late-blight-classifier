@@ -5,6 +5,7 @@ GET 324 (AI & Machine Learning) Mini-Project — Laboratory Exercise 10
 
 ## Live App
 https://cv4-potato-late-blight-classifier-b3fecbtgnhmvk6rgbckdl9.streamlit.app
+> **Note:** This app is hosted on Streamlit Community Cloud's free tier, which puts apps to sleep after a period of inactivity. If the link shows a "Zzzz... this app has gone to sleep" screen, simply click **"Yes, get this app back up!"** and wait 30–60 seconds for it to restart.
 
 ## About
 This application classifies potato leaf images as Healthy or affected by Late Blight, using a MobileNetV3 transfer-learning model trained on the PlantVillage dataset (Kaggle, via kagglehub). The model achieved 100% test accuracy and F1-score on a held-out test set of 95 images. Users upload a leaf photo through the web interface and receive an instant prediction with confidence percentages. Key challenges included managing Colab session timeouts during dataset preparation, and a Streamlit Cloud deployment failure caused by a Python-version mismatch with TensorFlow's available wheels — resolved by pinning the Python version via a `.python-version` file. Future improvements could include adding the Early Blight class for three-way classification, and expanding the test set for more robust evaluation.
