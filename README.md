@@ -39,7 +39,7 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 
 ## Contributors' Notes
 - **[Imetom Emmanuel Iniobong]:** Model training, deployment, and Streamlit troubleshooting
-- **[Member 2]:** 
+- **[Johnson Success Innocent]:** Dataset research and preparation  
 - **[Member 3]:** 
 - **[Member 4]:** 
 - **[Member 5]:** 
