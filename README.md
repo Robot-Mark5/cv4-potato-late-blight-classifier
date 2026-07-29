@@ -31,7 +31,7 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 - **[Johnson Success Innocent]:** Dataset research and preparation  
 - **[Nnitor Emmanuel Emmanuel]:** Testing the deployed app
 - **[Emeh Godspower Okon]:** Documentation and report writing
-- **[Member 5]:** 
+- **[Uduak Uduakabasi Johnson]:** Model training and evaluation support 
 - **[Member 6]:** 
 - **[Member 7]:**
 - 
