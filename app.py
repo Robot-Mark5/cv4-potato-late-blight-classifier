@@ -29,14 +29,21 @@ def predict(model, pil_image):
 # Build the UI
 model = load_model()
 
-uploaded_file = st.file_uploader("Upload a potato leaf image", type=["jpg", "jpeg", "png"])
+uploaded_files = st.file_uploader(
+    "Upload potato leaf images",
+    type=["jpg", "jpeg", "png"],
+    accept_multiple_files=True
+)
 
 # Make predictions and display results
-if uploaded_file:
-    img = Image.open(uploaded_file)
-    st.image(img, width=300)
-    label, healthy_pct, blight_pct = predict(model, img)
+if uploaded_files:
+    for i, uploaded_file in enumerate(uploaded_files):
+        img = Image.open(uploaded_file)
+        label, healthy_pct, blight_pct = predict(model, img)
 
-    st.write(f"**Prediction:** {label}")
-    st.progress(int(healthy_pct), text=f"Healthy: {healthy_pct:.1f}%")
-    st.progress(int(blight_pct), text=f"Late Blight: {blight_pct:.1f}%")
+        st.markdown(f"### Image {i+1}: {uploaded_file.name}")
+        st.image(img, width=300)
+        st.write(f"**Prediction:** {label}")
+        st.progress(int(healthy_pct), text=f"Healthy: {healthy_pct:.1f}%")
+        st.progress(int(blight_pct), text=f"Late Blight: {blight_pct:.1f}%")
+        st.divider()
