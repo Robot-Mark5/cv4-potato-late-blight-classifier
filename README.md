@@ -23,16 +23,16 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 | Nnitor Emmanuel Emmanuel | 23/EG/CV/011 | Nnitor001 |
 | Adah Covenant Victor | 23/EG/CV/081 | covenantpaul |
 | Udoise Miracle Stephen | 23/EG/CV/031 | Miraboy7 |
-| Uduak Uduakabasi Johnson | [23/EG/CV/021] | Yhudee10 |
+| Uduak Uduakabasi Johnson | 23/EG/CV/021 | Yhudee10 |
 | Emeh Godspower Okon | 23/EG/CV/071 | Godspower-6 |
 
 ## Contributors' Notes
-- **[Imetom Emmanuel Iniobong]:** Model training, deployment, and Streamlit troubleshooting
-- **[Johnson Success Innocent]:** Dataset research and preparation  
-- **[Nnitor Emmanuel Emmanuel]:** Testing the deployed app
-- **[Emeh Godspower Okon]:** Documentation and report writing
-- **[Uduak Uduakabasi Johnson]:** Model training and evaluation support 
-- **[Member 6]:** 
+- **Imetom Emmanuel Iniobong:** Model training, deployment, and Streamlit troubleshooting
+- **Johnson Success Innocent:** Dataset research and preparation  
+- **Nnitor Emmanuel Emmanuel:** Testing the deployed app
+- **Emeh Godspower Okon:** Documentation and report writing
+- **Uduak Uduakabasi Johnson:** Model training and evaluation support 
+- **Udoise Miracle Stephen:** Reviewed and proofread README
 - **[Member 7]:**
 - 
 ## Tech Stack
