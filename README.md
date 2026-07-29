@@ -33,8 +33,8 @@ This application classifies potato leaf images as Healthy or affected by Late Bl
 - **Emeh Godspower Okon:** Documentation and report writing
 - **Uduak Uduakabasi Johnson:** Model training and evaluation support 
 - **Udoise Miracle Stephen:** Reviewed and proofread README
-- **Adah Covenant Victor:** Reviewed code for accuracy 
-- 
+- **Adah Covenant Victor:** Reviewed code for accuracy
+
 ## Tech Stack
 - TensorFlow / Keras (MobileNetV3Small transfer learning)
 - Streamlit (web interface)
