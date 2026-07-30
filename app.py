@@ -28,17 +28,49 @@ def predict(model, pil_image):
 
 # Build the UI
 model = load_model()
-uploaded_file = st.file_uploader("Upload a potato leaf image", type=["jpg", "jpeg", "png"])
+uploaded_files = st.file_uploader(
+    "Upload potato leaf image(s)",
+    type=["jpg", "jpeg", "png"],
+    accept_multiple_files=True
+)
 
-# Call predict() and display the prediction result
-if uploaded_file:
-    try:
-        img = Image.open(uploaded_file)
-        st.image(img, width=300)
-        label, healthy_pct, blight_pct = predict(model, img)
-        st.write(f"**Prediction:** {label}")
-        st.progress(min(int(healthy_pct), 100), text=f"Healthy: {healthy_pct:.1f}%")
-        st.progress(min(int(blight_pct), 100), text=f"Late Blight: {blight_pct:.1f}%")
-    except Exception as e:
-        st.error(f"Something went wrong: {e}")
-        st.exception(e)
+if uploaded_files:
+    results = []
+
+    # Process all images first
+    for uploaded_file in uploaded_files:
+        try:
+            img = Image.open(uploaded_file)
+            label, healthy_pct, blight_pct = predict(model, img)
+            results.append({
+                "filename": uploaded_file.name,
+                "image": img,
+                "label": label,
+                "healthy_pct": healthy_pct,
+                "blight_pct": blight_pct
+            })
+        except Exception as e:
+            st.error(f"Error processing {uploaded_file.name}: {e}")
+
+    # Summary at the top
+    if results:
+        healthy_count = sum(1 for r in results if r["label"] == "Healthy")
+        blight_count = len(results) - healthy_count
+
+        st.markdown("### Summary")
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Total Images", len(results))
+        col2.metric("Healthy", healthy_count)
+        col3.metric("Late Blight", blight_count)
+        st.divider()
+
+        # Individual results as expandable cards
+        for i, r in enumerate(results):
+            with st.expander(f"📷 {r['filename']} — {r['label']}", expanded=(len(results) <= 3)):
+                col_img, col_data = st.columns([1, 1.2])
+                with col_img:
+                    st.image(r["image"], use_container_width=True)
+                with col_data:
+                    st.write(f"**Prediction:** {r['label']}")
+                    st.progress(min(int(r["healthy_pct"]), 100), text=f"Healthy: {r['healthy_pct']:.1f}%")
+                    st.progress(min(int(r["blight_pct"]), 100), text=f"Late Blight: {r['blight_pct']:.1f}%")
